@@ -1,0 +1,550 @@
+body {
+    overscroll-behavior: none;
+}
+/* HEADER */
+.navbar {
+    padding-left: 4.5rem !important;
+    padding-right: 4.5rem !important;
+    justify-content: space-between;
+}
+.navbar #signup-btn {
+    height: 50px;
+    width: 88px;
+    background-color: #0e6efb;
+    font-size: 15px;
+}
+
+/* HERO CONTENT */
+.jumbotron {
+    background-image: linear-gradient(#697c97b3, #344e71a1), url("banner.jpg") ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+#hero-jn {
+    padding: 184px 150px 200px;
+}
+.jumbotron h1 {
+    font-size: 3rem;
+    /* max-width: 600px; */
+    width: 50vw;
+}
+.jumbotron form {
+    width: 40rem !important;
+    height: 4rem;
+    justify-content: space-between;
+}
+#hero-jn form {
+    margin-top: 40px;
+}
+.jumbotron #form-input {
+    width: 80% !important;
+}
+.jumbotron #form-input input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding-left: 21px;
+    padding-right: 21px;
+    background-color: white;
+    color: black !important;
+}
+.jumbotron button {
+    width: 16%;
+    opacity: 50%;
+    font-size: 1.3rem;
+}
+.jumbotron #form-input input, 
+.jumbotron button {
+    height: 4rem;
+    border-radius: 10px;
+}
+.material-symbols-outlined {
+    position: relative;
+    top: 1rem;
+    left: 43%;
+    color: red;
+    font-size: 30px;
+    display: none;
+}
+#error-msg, #error-msg2 {
+    display: none;
+}
+
+/* BRIEF FEATURES */
+.bigIcons {
+    font-size: 4.5rem;
+    color: #0e6efb;
+}
+#brief-features {
+    width: 100% !important;
+    text-align: center;
+    padding: 7rem 4.6rem;
+    background-color: #f8f9fa;
+    margin: 0px auto;
+}
+.card {
+    border: none;
+    background-color: #f8f9fa;
+}
+#brief-features .card-body {
+    margin-top: -1.2rem;
+}
+#brief-features .card-body h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#brief-features .card-body p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    width: 90%;
+    margin: .8rem auto 0;
+    letter-spacing: .5px;
+}
+
+/* DETAILED FEATURES */
+.container-fluid {
+    padding: 0;
+}
+.feature-row {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+.feature-row div {
+    width: 50%;
+}
+.feature-row img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+.feature-row:nth-of-type(1),
+.feature-row:nth-of-type(3) {
+    flex-direction: row-reverse;
+}
+.feature-row .content {
+    padding: 9.7rem 7rem 0;
+}
+.feature-row .content h2 {
+    font-size: 2.1rem;
+}
+.feature-row .content p {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+/* TESTIMONIALS */
+#testimonials {
+    background-color: #f8f9fa;
+    padding: 6.8rem 4rem 6.3rem
+}
+#testimonials img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 2.5rem auto 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.300);
+}
+#testimonials .card {
+    text-align: center;
+}
+#testimonials h2 {
+    text-align: center;
+}
+#testimonials p {
+    width: 80%;
+    margin: 1px auto;
+}
+
+
+/* SMALL JUMBOTRON */
+#small-jn {
+    padding: 7rem;
+}
+#small-jn form {
+    margin-top: 1.5rem;
+}
+#small-jn form input {
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4.5rem 3rem;
+    background-color: #f8f9fa;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.links a {
+    text-decoration: underline;
+    font-size: .97rem;
+    margin-right: 1rem;
+}
+.links p::after {
+    content: '\00B7';
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+#last-item::after {
+    content: '';
+}
+.copyright {
+    font-size: .9rem;
+    color: #6c757d;
+    margin-top: -.4rem;
+}
+.sm-icons {
+    font-size: 1.7rem;
+}
+.sm-icons a:nth-of-type(2) {
+    margin: 0 1.5rem;
+}
+
+/* MEDIA QUERIES */
+/* RESPONSIVENESS */
+@media (max-width: 1440px) {
+    .feature-row .content {
+        padding: 9rem 7rem 0;
+    }
+}
+@media (max-width: 1209px) {
+    .feature-row .content {
+        padding: 7rem 7rem 0;
+    }
+}
+@media (max-width: 1090px) {
+    #testimonials p {
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    #brief-features {
+        flex-direction: column;
+    }
+    #brief-features .card-body p {
+        width: 45%;
+    }
+    .feature-row {
+        display: block;
+    }
+    .feature-row div {
+        width: 100%;
+        height: 26.2rem;
+    }
+    .feature-row img {
+        height: 30rem;
+        object-fit: cover;
+    }
+    .feature-row .content {
+        padding: 10.5rem 7rem 0;
+    }
+    .feature-row .content h2 {
+        font-size: 2rem;
+    }
+    #testimonials .card-deck {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    #testimonials p {
+        width: 38%;
+    }
+    #testimonials .card:first-of-type p {
+        width: 100%;
+    }
+    #testimonials .card:last-of-type p {
+        width: 45%;
+    }
+    #testimonials .card:nth-of-type(1) .card-body {
+        height: 8rem;
+    }
+    #testimonials .card img {
+        margin-top: 0;
+    }
+    #testimonials .card:nth-of-type(2) p {
+        width: 37%;
+    }
+    #testimonials .card:nth-of-type(2) {
+        margin-bottom: 2rem;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+    .links {
+        justify-content: center;
+    }
+}
+@media (max-width: 978px) {
+    .jumbotron h1 {
+        width: 70vw;
+    }
+}
+@media (max-width: 946px) {
+    #small-jn h2 {
+        font-size: 2rem;
+    }
+    #small-jn form {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 922px) {
+    #brief-features .card-body p {
+        width: 50%;
+    }
+}
+@media (max-width: 813px) {
+    .jumbotron h1 {
+        width: 80vw;
+    }
+}
+@media (max-width: 842px) {
+    #brief-features .card-body p {
+        width: 55%;
+    }
+    #brief-features .card:nth-of-type(2) {
+        /* border: 1px solid red; */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 788px) {
+    #brief-features .card-body p {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    #hero-jn h1 {
+        font-size: 2rem;
+    }
+    #hero-jn form {
+        margin-top: 20px;
+    }
+    .jumbotron form {
+        width: 32rem !important;
+    }
+    .jumbotron #form-input {
+        width: 75% !important;
+    }
+    .jumbotron button {
+        width: 20%;
+    }
+    #brief-features .card-body h3 {
+        font-size: 1.6rem;
+    }
+    .feature-row .content {
+        padding: 6.8rem 3rem 2rem;
+        height: max-content;
+    }
+    .feature-row .content h2 {
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 735px) {
+    #testimonials .card:nth-of-type(2) p {
+        width: 50%;
+    }
+}
+@media (max-width: 730px) {
+    #brief-features .card-body p {
+        width: 65%;
+    }
+}
+@media (max-width: 726px) {
+    #testimonials .card:last-of-type p {
+        width: 63%;
+    }
+    #small-jn h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 690px) {
+    #brief-features .card-body p {
+        width: 75%;
+    }
+    .feature-row .content h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 642px) {
+    #small-jn {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    #small-jn h2 {
+        width: 100%;
+        max-width: 632px;
+    }
+}
+@media (max-width: 620px) {
+    #brief-features .card-body p {
+        width: 90%;
+    }
+}
+@media (max-width: 590px) {
+    #hero-jn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (max-width: 587px) {
+    #testimonials .card:nth-of-type(2) p {
+        width: 70%;
+    }
+    footer {
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+}
+@media (max-width: 579px) {
+    #small-jn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (max-width: 563px) {
+    #testimonials .card:last-of-type p {
+        width: 77%;
+    }
+}
+@media (max-width: 549px) {
+    #brief-features {
+        padding-left: 0;
+    }
+    #brief-features .card{
+        width: 100vw;
+    }
+    #brief-features .card-body p {
+        width: 80%;
+    }
+    .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+}
+@media (max-width: 535px) {
+    .jumbotron form {
+        width: 100% !important;
+    }
+}
+@media (max-width: 514px) {
+    .jumbotron form {
+        width: 100% !important;
+    }
+    footer {
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 500px) and (orientation: portrait) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    .navbar {
+        padding: .5rem .8rem !important;
+    }
+    #hero-jn {
+        padding: 8rem .8rem;
+    }
+    .jumbotron h1 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    #hero-jn form {
+        margin-top: 2.2rem;
+    }
+    .jumbotron #form-input {
+        width: 63% !important;
+    }
+    .jumbotron button {
+        width: 30%;
+    }
+    #brief-features h3 {
+        font-size: 1.5rem !important;
+    }
+    #brief-features p {
+        font-size: 1.2rem !important;
+        width: 90% !important;
+    }
+    #detailed-features h2,
+    #testimonials h2 {
+        font-size: 1.6rem;
+    }
+    #detailed-features p {
+        font-size: 1.2rem !important;
+    }
+    #testimonials .card p {
+        width: 100%;
+    }
+    #testimonials {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #testimonials .card:nth-of-type(2) {
+        margin-top: -1rem;
+        margin-bottom: 1.7rem;
+    }
+    #testimonials img {
+        width: 190px;
+    }
+    #small-jn h2 {
+        font-size: 1.5rem;
+    }
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+        padding-bottom: 4rem;
+    }
+    .links a {
+        margin-right: .5rem;
+    }
+    .links p::after {
+        margin-right: 0.5rem;
+    }
+    .sm-icons {
+        font-size: 1.5rem;
+        margin-left: -1.3rem;
+        margin-top: 1.5rem;
+    }
+    .copyright {
+        font-size: .8rem;
+    }
+    .sm-icons a:nth-of-type(2) {
+        margin: 0 1.3rem;
+    }
+    .material-symbols-outlined {
+        left: 38%;
+    }
+}
+@media (max-width: 393px) and (orientation: portrait) {
+    footer {
+        padding-left: 2.5rem; 
+        padding-right: 2rem;
+    }
+    .links #last-item {
+        margin-top: -1rem;
+    }
+    .links a {
+        margin-right: .8rem;
+    }
+    .links p::after {
+        margin-right: .8rem;
+    }
+}
